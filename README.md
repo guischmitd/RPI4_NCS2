@@ -33,12 +33,14 @@ sudo apt-get install cmake
 
 Go and grab the lates openvino toolkit (This assumes you are still in ~openvino):
 
-wget https://download.01.org/opencv/2019/openvinotoolkit/l_openvino_toolkit_raspbi_p_2019.1.094.tgz
+```
+wget https://download.01.org/opencv/2019/openvinotoolkit/R3/l_openvino_toolkit_runtime_raspbian_p_2019.3.334.tgz
+```
 
 Untar:
-
+```
 tar -xf l_openvino_toolkit_raspbi_p_2019.1.094.tgz
-
+```
 REPLACE ~/openvino/inference_engine_vpu_arm/bin/setupvars.sh with the version of setupvars.sh that I have uploaded here:
 https://github.com/leswright1977/RPI4_NCS2/blob/master/src/setupvars.sh 
 About the file:
@@ -49,15 +51,16 @@ Enable the environment (note we force the script to believe we are running pytho
 source ~/openvino/inference_engine_vpu_arm/bin/setupvars.sh -pyver 3.5
 
 Echo the following line into ~./bashrc so the env is loaded at logon:
-
+```
 echo "source ~/openvino/inference_engine_vpu_arm/bin/setupvars.sh -pyver 3.5" >> ~/.bashrc
-
+```
 Add the user 'pi' to the users group:
 sudo usermod -a -G users pi
 
 Run the following script:
+```
 sh ~/openvino/inference_engine_vpu_arm/install_dependencies/install_NCS_udev_rules.sh
-
+```
 Done!
 
 *Note: if your scripts currently have an import line like this:

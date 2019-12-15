@@ -48,7 +48,9 @@ Fixed expected OS version
 Hacked in some symlinks and dynamically loaded libs to fix errors. 
 
 Enable the environment (note we force the script to believe we are running python 3.5)
+```
 source ~/openvino/inference_engine_vpu_arm/bin/setupvars.sh -pyver 3.5
+```
 
 Echo the following line into ~./bashrc so the env is loaded at logon:
 ```

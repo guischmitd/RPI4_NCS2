@@ -34,7 +34,7 @@ sudo apt-get install cmake
 Go and grab the lates openvino toolkit (This assumes you are still in ~openvino):
 
 ```
-wget https://download.01.org/opencv/2019/openvinotoolkit/R3/l_openvino_toolkit_runtime_raspbian_p_2019.3.334.tgz
+wget https://download.01.org/opencv/2019/openvinotoolkit/R1/l_openvino_toolkit_raspbi_p_2019.1.094.tgz
 ```
 
 Untar:
